@@ -1,3 +1,20 @@
+# Tetris Game in React
+
+## Description
+This project is a modern implementation of the classic Tetris game, built with JavaScript and React. It aims to provide a responsive and engaging gaming experience, showcasing the capabilities of React in game development.
+
+## Features
+- Responsive Tetris gameplay
+- Scoring system
+- Next piece preview
+- Level progression
+- Customizable themes
+
+## Technologies
+- React
+- JavaScript
+- CSS for styling
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
