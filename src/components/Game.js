@@ -3,21 +3,20 @@ import Tetris from "./Tetris.js";
 
 import { useGameOver } from "../hooks/useGameOver.js";
 
-const Game = ({columns, rows}) => {
+const Game = ({ rows, columns }) => {
+  const [gameOver, setGameOver, resetGameOver] = useGameOver();
 
-    const[gameOver, setGameOver, resetGameOver] = useGameOver();
+  const start = () => resetGameOver();
 
-    const start = () => resetGameOver();
-
-    return (
-        <div className="game">
-          {gameOver ? (
-            <Menu onClick={start} />
-           ) : (
-            <Tetris rows={rows} columns={columns} setGameOver={setGameOver} />
-          )}
-        </div>
-    );
+  return (
+    <div className="Game">
+      {gameOver ? (
+        <Menu onClick={start} />
+      ) : (
+        <Tetris rows={rows} columns={columns} setGameOver={setGameOver} />
+      )}
+    </div>
+  );
 };
 
 export default Game;

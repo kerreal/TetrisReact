@@ -1,13 +1,11 @@
 import "./Menu.css";
 
-const Menu = ({onClick}) => {
-    return (
-        <div className="game-menu">
-            <button className="game-button" onClick={onClick}>
-                Start the Game
-            </button>
-        </div>
-    )
-}
+const Menu = ({ onClick }) => (
+  <div className="Menu">
+    <button className="Button" onClick={onClick}>
+      Start Game
+    </button>
+  </div>
+);
 
 export default Menu;
